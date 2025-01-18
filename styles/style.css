@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    margin: 0; 
-    padding: 0;
-}
+
 .work-sans-fonts {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
@@ -12,6 +9,14 @@ body{
   }
 
   /* Shared styles  */
+  main{
+    max-width: 1500px;
+    margin: 0 auto;
+    
+  }
+  main >section{
+     margin-top: 100px; 
+  }
   .display-flex{
     display: flex;
   }
@@ -22,7 +27,7 @@ body{
     color: #131313
 }
 .dark-2{
-    color:#131313
+    color:#424242
 }
 .dark-3{
     color: #727272;
@@ -36,9 +41,9 @@ body{
   border:none
 }
   /* header style  */
-  
+ 
    .navbar,.banner{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 
    }
@@ -50,18 +55,22 @@ body{
     justify-content: space-between;
     align-items: center;
   }
-  .nav-links{
-    gap: 30px;
-  }
-  .nav-links li{
+  .nav-item{
     list-style: none;
-  }
-  .nav-links li a{
-    text-decoration: none;
+    margin-right: 30px;
     font-size: 1.5rem;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* .nav-links li a{
+    text-decoration: none;
+    
     font-weight: 500;
 
-  }
+  } */
   /* Banner related styles */
 
   .banner-content{
@@ -83,15 +92,48 @@ body{
   .banner-img{
     width: 100%;
   }
+  /* team section style  */
+  .teams{
+    align-items: center;
+    gap: 130px;
+    flex-direction: row;
+    margin-top: 100px;
+    /* margin-bottom: ; */
+  }
+  .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
+  .section-title{
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+ #quick-list{
+  color: #424242;
+ }
+ .our-features{
+  max-width: 550px;
+ }
+ .feature-description{
+  font-size: 1.3rem;
+ }
+
 
   /* Responsive task */
   @media screen and (max-width:576px) {
     .navbar,
-    .nav-links{
+    .nav-links,
+    .teams
+    {
       flex-direction: column;
     }
-    header{
+    /* #header{
       background-color: white;
+    } */
+    .team-img-container{
+      grid-template-columns: 1fr;
+      margin: 0 auto;
     }
   }
 
