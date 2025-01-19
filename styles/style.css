@@ -261,12 +261,13 @@
       text-align: center;
       margin: 0 auto;
     }
+    .feature-img img{
+      width: 100%;
+      
+    }
+    #experience-badge{
+      margin-top: 20px;
+      margin-left: 100px;
+    }
   }
-  .feature-img img{
-    width: 100%;
-    
-  }
-  #experience-badge{
-    margin-top: 20px;
-    margin-left: 100px;
-  }
+
