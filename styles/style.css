@@ -207,7 +207,8 @@
   @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .teams
+    .teams,
+    .features
     {
       flex-direction: column;
     }
@@ -223,6 +224,15 @@
       justify-items: center;
     }
     
+    #experience-badge{
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .feature-img img{
+      width: 100%;
+      
+    }
+    
     .sponsor-content{
       max-width: 100%;
     }
@@ -235,7 +245,8 @@
   @media screen and (min-width:576px) and (max-width:992px) {
     .navbar,
     .nav-links,
-    .teams
+    .teams,
+    .features
     {
       flex-direction: column;
     }
@@ -251,5 +262,11 @@
       margin: 0 auto;
     }
   }
-
-
+  .feature-img img{
+    width: 100%;
+    
+  }
+  #experience-badge{
+    margin-top: 20px;
+    margin-left: 100px;
+  }
